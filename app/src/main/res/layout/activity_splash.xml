@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashVM" type="com.stammer.app.modules.splash.data.viewmodel.SplashVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumn"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_334pxv"
+        android:layout_marginEnd="@dimen/_34pxh"
+        android:layout_marginStart="@dimen/_66pxh"
+        android:layout_marginTop="@dimen/_229pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyledeep_purple_A200">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageImageremovebg"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_imageremovebg}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_imageremovebg"/>
+        </ScrollView>
+    </LinearLayout>
+</layout>

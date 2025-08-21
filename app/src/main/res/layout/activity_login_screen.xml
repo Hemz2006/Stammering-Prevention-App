@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginScreenVM" type="com.stammer.app.modules.loginscreen.data.viewmodel.LoginScreenVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumn"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_67pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyledeep_purple_A200">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumntitle"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStyle">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTITLE"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_291pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{loginScreenVM.loginScreenModel.txtTITLE}"
+                    style="@style/txtInterbold32" tools:text="@string/lbl_stammering_cure"/>
+                <TextView android:id="@+id/txtPrice"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_22pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{loginScreenVM.loginScreenModel.txtPrice}"
+                    style="@style/txtInterregular16" tools:text="@string/msg_your_one_stop_f"/>
+                <LinearLayout android:gravity="center_vertical"
+                    android:id="@+id/linearRowfacebook"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_74pxv"
+                    android:layout_width="wrap_content" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageFacebook"
+                        android:layout_height="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_43pxv"
+                        android:layout_width="@dimen/_13pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_facebook"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_facebook"/>
+                    <LinearLayout
+                        android:id="@+id/linearColumnorloginwith"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8pxh"
+                        android:layout_weight="0.91"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:gravity="start"
+                            android:id="@+id/txtOrloginwith"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{loginScreenVM.loginScreenModel.txtOrloginwith}"
+                            style="@style/txtInterregular16" tools:text="@string/lbl_or_login_with"/>
+                        <LinearLayout android:gravity="end"
+                            android:id="@+id/linearRowtwitter"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_24pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <ImageView android:id="@+id/imageTwitter"
+                                android:layout_height="@dimen/_19pxh"
+                                android:layout_marginBottom="@dimen/_3pxv"
+                                android:layout_marginTop="@dimen/_2pxv"
+                                android:layout_width="@dimen/_24pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_twitter"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_twitter"/>
+                            <ImageView android:id="@+id/imageGoogle"
+                                android:layout_height="@dimen/_24pxh"
+                                android:layout_marginStart="@dimen/_35pxh"
+                                android:layout_width="@dimen/_37pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_google"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_google"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnLogIn"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_50pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_16pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_log_in"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_log_in"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnSignUp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20pxv"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_28pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_16pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_sign_up"
+                    android:textAllCaps="false"
+                    style="@style/btnRoundedOutline" tools:text="@string/lbl_sign_up"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

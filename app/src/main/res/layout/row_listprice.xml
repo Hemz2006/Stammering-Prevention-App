@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listpriceRowModel" type="com.stammer.app.modules.courseshowcase.data.model.ListpriceRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnprice"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <TextView android:ellipsize="end" android:id="@+id/txtPrice"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listpriceRowModel.txtPrice}"
+            style="@style/txtIntersemibold20" tools:text="@string/msg_stammering_cour"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txt45minutesago"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listpriceRowModel.txt45minutesago}"
+            style="@style/txtInterregular14_3" tools:text="@string/msg_taught_by_heman"/>
+    </LinearLayout>
+</layout>

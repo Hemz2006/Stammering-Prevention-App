@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="courseShowcaseVM" type="com.stammer.app.modules.courseshowcase.data.viewmodel.CourseShowcaseVM"/>
+    </data>
+    <LinearLayout android:gravity="end"
+        android:id="@+id/linearColumngroup9020"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearRowgroup9020"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <androidx.appcompat.widget.SearchView
+                    android:background="@drawable/rectangle_bg_gray_100_radius_20"
+                    android:id="@+id/searchViewGroup9020"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.89"
+                    android:layout_width="0dp"
+                    android:theme="@style/searchViewGroup9020"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    app:queryHint="@string/lbl_search" app:searchIcon="@drawable/img_search"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumnramone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_weight="0.11"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStyledeep_purple_A200cornerRadius">
+                    <ImageView android:gravity="end"
+                        android:id="@+id/imageRamOne"
+                        android:layout_height="@dimen/_34pxh"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_ram1}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ram1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:id="@+id/linearCOURSESHOWCASE"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtYOURRESULTS"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{courseShowcaseVM.courseShowcaseModel.txtYOURRESULTS}"
+                style="@style/txtInterbold24" tools:text="@string/lbl_your_results"/>
+            <ImageView android:id="@+id/imageImageOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_476pxh"
+                android:layout_marginEnd="@dimen/_28pxh"
+                android:layout_marginStart="@dimen/_28pxh"
+                android:layout_marginTop="@dimen/_65pxv"
+                android:layout_width="@dimen/_315pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_image1}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image1"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="start"
+                android:id="@+id/recyclerListprice"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3" tools:listitem="@layout/row_listprice"/>
+        </LinearLayout>
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameBottombar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" style="@style/groupStylewhite_A700cornerRadius">
+            <LinearLayout android:id="@+id/linearRowhome"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_15pxv"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearColumnhome"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_weight="1" android:layout_width="0dp" android:orientation="vertical">
+                    <ImageView android:id="@+id/imageHome"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_23pxh"
+                        android:layout_width="@dimen/_22pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_home"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_home"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtHomeOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_12pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{courseShowcaseVM.courseShowcaseModel.txtHomeOne}"
+                        style="@style/txtInterregular10" tools:text="@string/lbl_home"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearColumnuser"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" android:layout_width="0dp" android:orientation="vertical">
+                    <ImageView android:id="@+id/imageUser"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_25pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_width="@dimen/_21pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_user"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_user"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtProfile"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{courseShowcaseVM.courseShowcaseModel.txtProfile}"
+                        style="@style/txtInterregular10" tools:text="@string/lbl_profile"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

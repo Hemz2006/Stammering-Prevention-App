@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="appNavigationVM" type="com.stammer.app.modules.appnavigation.data.viewmodel.AppNavigationVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroupAP13"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearAppNavigation"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtAppNavigation"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{appNavigationVM.appNavigationModel.txtAppNavigation}"
+                style="@style/txtregular20" tools:text="@string/lbl_app_navigation"/>
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtCheckYourAppsUIFromTheBelowDemoScreensOfYourApp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{appNavigationVM.appNavigationModel.txtCheckYourAppsUIFromTheBelowDemoScreensOfYourApp}"
+                style="@style/txtregular16" tools:text="@string/msg_check_your_app"/>
+            <View android:background="@color/black_900"
+                android:id="@+id/lineLine2"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+        </LinearLayout>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/scrollViewGroupAP12"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearGroupAP11"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <LinearLayout android:id="@+id/linearSplash"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtSplash"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtSplash}"
+                        style="@style/txtregular20" tools:text="@string/lbl_splash"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine3"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearLoginScreen"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtLoginScreen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtLoginScreen}"
+                        style="@style/txtregular20" tools:text="@string/lbl_login_screen"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine4"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearLogIn"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtLogIn"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtLogIn}"
+                        style="@style/txtregular20" tools:text="@string/lbl_log_in"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine5"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearSignUp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtSignUp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtSignUp}"
+                        style="@style/txtregular20" tools:text="@string/lbl_sign_up"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine6"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearDetailedProfile"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtDetailedProfile"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtDetailedProfile}"
+                        style="@style/txtregular20" tools:text="@string/msg_detailed_profil"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine7"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearHOMEPAGE"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtHOMEPAGE"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtHOMEPAGE}"
+                        style="@style/txtregular20" tools:text="@string/lbl_home_page"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine8"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearSearch"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtSearch"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtSearch}"
+                        style="@style/txtregular20" tools:text="@string/lbl_search"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine9"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearCOURSESHOWCASE"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtCOURSESHOWCASE"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtCOURSESHOWCASE}"
+                        style="@style/txtregular20" tools:text="@string/lbl_course_showcase"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine10"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearCoursePage"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtCoursePage"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtCoursePage}"
+                        style="@style/txtregular20" tools:text="@string/lbl_course_page"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine11"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearTOPICOne"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtTOPICOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtTOPICOne}"
+                        style="@style/txtregular20" tools:text="@string/lbl_topic_one"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine12"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearTOPICTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtTOPICTwo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtTOPICTwo}"
+                        style="@style/txtregular20" tools:text="@string/lbl_topic_two"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine13"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearTOPICThree"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtTOPICThree"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtTOPICThree}"
+                        style="@style/txtregular20" tools:text="@string/lbl_topic_three"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine14"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearTOPICFour"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtTOPICFour"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtTOPICFour}"
+                        style="@style/txtregular20" tools:text="@string/lbl_topic_four"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine15"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearTOPICFive"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtTOPICFive"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtTOPICFive}"
+                        style="@style/txtregular20" tools:text="@string/lbl_topic_five"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine16"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
